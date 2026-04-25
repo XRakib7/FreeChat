@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Free Chat</string>
+    <string name="app_tagline">End-to-End Encrypted Messaging</string>
+    <string name="action_new_group">New Group</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_logout">Log out</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_otp">Enter 6-digit OTP</string>
+    <string name="hint_message">Message</string>
+    <string name="hint_your_name">Your name</string>
+    <string name="hint_about">About</string>
+    <string name="hint_group_name">Group name</string>
+    <string name="hint_search_phone">Search by phone (e.g. +12025551234)</string>
+    <string name="btn_send_otp">Send OTP</string>
+    <string name="btn_verify">Verify</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_create_group">Create Group</string>
+    <string name="btn_add_member">Add</string>
+    <string name="btn_leave_group">Leave Group</string>
+    <string name="label_online">online</string>
+    <string name="label_typing">typing\u2026</string>
+    <string name="label_participants">Participants</string>
+    <string name="label_tap_to_add_photo">Tap to add photo</string>
+    <string name="label_resend_otp">Resend OTP</string>
+    <string name="msg_unable_to_decrypt">[Unable to decrypt message]</string>
+    <string name="msg_photo">[Photo]</string>
+    <string name="msg_message">[Message]</string>
+    <string name="error_name_required">Name required</string>
+    <string name="error_enter_phone">Enter phone number</string>
+    <string name="error_enter_otp">Enter 6-digit OTP</string>
+</resources>

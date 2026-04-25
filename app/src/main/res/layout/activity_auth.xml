@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Free Chat" android:textSize="28sp" android:textStyle="bold"
+        android:textColor="@color/teal_700" android:layout_marginBottom="8dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Enter your phone number to get started"
+        android:textSize="14sp" android:layout_marginBottom="32dp"/>
+
+    <!-- Phone number entry -->
+    <LinearLayout android:id="@+id/layoutPhone"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker android:id="@+id/ccp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <EditText android:id="@+id/etPhone"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone number"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btnSendOtp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Send OTP"
+            android:backgroundTint="@color/teal_700"/>
+    </LinearLayout>
+
+    <!-- OTP entry (hidden initially) -->
+    <LinearLayout android:id="@+id/layoutOtp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText android:id="@+id/etOtp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Enter 6-digit OTP"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+
+        <Button android:id="@+id/btnVerify"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Verify"
+            android:backgroundTint="@color/teal_700"/>
+
+        <TextView android:id="@+id/tvResend"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:layout_gravity="center"
+            android:text="Resend OTP"
+            android:textColor="@color/teal_700"/>
+    </LinearLayout>
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

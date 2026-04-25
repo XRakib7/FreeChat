@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_900">#FF00574B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bubble_sent">#DCF8C6</color>
+    <color name="bubble_received">#FFFFFF</color>
+    <color name="chat_background">#ECE5DD</color>
+    <color name="status_delivered">#92A3A8</color>
+    <color name="status_read">#53BDEB</color>
+    <color name="online_green">#4CAF50</color>
+</resources>

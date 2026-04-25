@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@color/teal_700">
+
+            <!-- Status subtitle: "online" or "last seen X" -->
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:layout_marginStart="8dp">
+                <!-- Title is set programmatically via getSupportActionBar().setTitle() -->
+                <TextView android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="@color/white"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Typing indicator -->
+    <TextView android:id="@+id/tvTyping"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="typing..."
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:paddingStart="16dp"
+        android:visibility="gone"/>
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/chat_background"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- Input bar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="4dp">
+
+        <ImageButton android:id="@+id/btnAttach"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText android:id="@+id/etMessage"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Message"
+            android:maxLines="6"
+            android:inputType="textMultiLine"
+            android:background="@null"
+            android:padding="8dp"/>
+
+        <ImageButton android:id="@+id/btnSend"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/teal_700"/>
+    </LinearLayout>
+
+</LinearLayout>

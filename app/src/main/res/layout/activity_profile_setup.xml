@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:gravity="center">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Set up your profile" android:textSize="22sp" android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <ImageView android:id="@+id/ivAvatar"
+        android:layout_width="96dp" android:layout_height="96dp"
+        android:src="@drawable/ic_default_avatar"
+        android:background="@color/teal_200"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Tap to add photo" android:textSize="12sp" android:layout_marginBottom="24dp"/>
+
+    <EditText android:id="@+id/etDisplayName"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Your name" android:maxLength="30"/>
+
+    <Button android:id="@+id/btnSave"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Save and Continue"
+        android:backgroundTint="@color/teal_700"/>
+
+    <ProgressBar android:id="@+id/progressBar"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:visibility="gone"/>
+
+</LinearLayout>

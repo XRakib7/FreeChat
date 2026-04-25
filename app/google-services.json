@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "406504148945",
+    "firebase_url": "https://freechat-a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "freechat-a",
+    "storage_bucket": "freechat-a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406504148945:android:55eb85b3e5c493d2055af0",
+        "android_client_info": {
+          "package_name": "com.softcraft.freechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406504148945-m3iqfkg022k98eikdqmvlp1b4oqblh4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT_ffQ78GwmgbNKRGWyAoEvBSEi-0GFw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406504148945-m3iqfkg022k98eikdqmvlp1b4oqblh4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

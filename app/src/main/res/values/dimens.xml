@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="avatar_size_large">96dp</dimen>
+    <dimen name="avatar_size_medium">56dp</dimen>
+    <dimen name="avatar_size_small">40dp</dimen>
+    <dimen name="message_bubble_max_width">280dp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_timestamp">11sp</dimen>
+</resources>
